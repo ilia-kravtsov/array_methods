@@ -1,5 +1,3 @@
-// simple
-
 const plants = ["broccoli", "cauliflower", "cabbage", "kale", "tomato"];
 
 Array.prototype.kpop = function () {

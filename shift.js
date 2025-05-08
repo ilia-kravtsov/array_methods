@@ -13,5 +13,5 @@ Array.prototype.kshift = function() {
 
 const firstElement = array1.kshift();
 
-console.log(array1);
-console.log(firstElement);
+console.log(array1); // [2, 3, 4, 5, 6]
+console.log(firstElement); // 1

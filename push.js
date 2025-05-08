@@ -1,5 +1,4 @@
 const animals = ["pigs", "goats", "sheep"];
-console.log(animals);
 
 Array.prototype.kpush = function(...args) {
   for(let i = 0; i < args.length; i++) {
@@ -8,16 +7,16 @@ Array.prototype.kpush = function(...args) {
   return this.length
 }
 
-Array.prototype.krpush = function (...args) {
+Array.prototype.kpush_2 = function(...args) {
   args.forEach(arg => (this[this.length] = arg));
   return this.length;
 };
 
 const moreVegs = ["celery", "beetroot"];
 const result = animals.kpush(...moreVegs);
-console.log(animals);
-console.log(result);
+console.log(animals); // ["pigs", "goats", "sheep", "celery", "beetroot"]
+console.log(result); // 5
 
-const kresult = animals.krpush('forEach');
-console.log(animals);
-console.log(kresult);
+const kresult = animals.kpush_2('forEach');
+console.log(animals); // ["pigs", "goats", "sheep", "celery", "beetroot", "forEach"]
+console.log(kresult); // 6
